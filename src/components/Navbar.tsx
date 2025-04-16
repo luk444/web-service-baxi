@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logoBaxi from '../../dist/assets/BAXI.svg';
+import logoBaxi from '../assets/BAXI.svg';
 
 
 const Navbar = () => {

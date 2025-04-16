@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Building2, Award, Users, PenTool as Tool, Thermometer, Radiation as Radiator, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
-import logoBaxi from '../../dist/assets/BAXI.svg';
+import logoBaxi from '../assets/BAXI.svg';
 
 
 const certifications = [

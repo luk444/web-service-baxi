@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import BrandSlider from "./BrandSlider";
-import logoBaxi from '../../dist/assets/BAXI.svg';
-import banerHome from '../../dist/assets/mantenimiento-home.webp';
+import logoBaxi from '../assets/BAXI.svg';
+import banerHome from '../assets/mantenimiento-home.webp';
 
 const reviews = [
   {
