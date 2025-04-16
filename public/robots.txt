@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://baxi-calderas.netlify.app/sitemap.xml
