@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import BaxiLogo from '/home/project/dist/assets/baxilogo.webp';
-import PeisaLogo from '/home/project/dist/assets/peisalogo.webp';
-import AristonLogo from '/home/project/dist/assets/aristonlogo.webp';
-import EutermaLogo from '/home/project/dist/assets/eutermalogo.webp';
-import CaldaiaLogo from '/home/project/dist/assets/caldaialogo.webp';
+import BaxiLogo from '../../dist/assets/baxilogo.webp';
+import PeisaLogo from '../../dist/assets/peisalogo.webp';
+import AristonLogo from '../../dist/assets/aristonlogo.webp';
+import EutermaLogo from '../../dist/assets/eutermalogo.webp';
+import CaldaiaLogo from '../../dist/assets/caldaialogo.webp';
 
 const brands = [
   { name: 'Baxi', logo: BaxiLogo },

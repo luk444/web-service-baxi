@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logoBaxi from '/home/project/dist/assets/BAXI.svg';
+import logoBaxi from '../../dist/assets/BAXI.svg';
 
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   // Función para manejar navegación hacia una sección
-  const handleScrollTo = (id) => {
+  const handleScrollTo = (id: string) => {
     if (location.pathname !== '/') {
       // Navegá al home y esperá un momento para hacer scroll
       navigate('/');

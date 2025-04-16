@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
-import logoBaxi from '/home/project/dist/assets/BAXI.svg';
+import logoBaxi from '../../dist/assets/BAXI.svg';
 
 
 const StartupService = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Clock, Gauge, Lock } from 'lucide-react';
-import mantenimiento from '/home/project/dist/assets/imagenreparacionbaxi.webp';
+import mantenimiento from '../../dist/assets/imagenreparacionbaxi.webp';
 
 const MaintenancePlans = () => {
   return (

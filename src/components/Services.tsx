@@ -1,6 +1,6 @@
 import React from 'react';
 import { PenTool as Tool, Thermometer, Wrench, Settings, AlertCircle, FileCheck, Shield } from 'lucide-react';
-import logoBaxi from '/home/project/dist/assets/BAXI.svg';
+import logoBaxi from '../../dist/assets/BAXI.svg';
 
 
 const Services = () => {
