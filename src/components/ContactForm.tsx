@@ -127,115 +127,115 @@ const ContactForm = () => {
 
           {/* Formulario */}
           <motion.div
-  initial={{ opacity: 0, x: 50 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.6 }}
-  className="bg-white rounded-2xl shadow-xl p-8"
->
-  <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-    Solicitar Servicio
-  </h3>
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white rounded-2xl shadow-xl p-8"
+          >
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              Solicitar Servicio
+            </h3>
 
-  {isSubmitted ? (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4 }}
-      className="text-center bg-green-50 border border-green-200 p-8 rounded-xl"
-    >
-      <h4 className="text-2xl font-semibold text-green-700 mb-2">¡Mensaje enviado con éxito! ✅</h4>
-      <p className="text-gray-600">
-        Gracias por contactarnos. Te responderemos a la brevedad.
-      </p>
-      <button
-        onClick={() => setIsSubmitted(false)}
-        className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md shadow transition"
-      >
-        Enviar otro mensaje
-      </button>
-    </motion.div>
-  ) : (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-      <div>
-        <label className="block text-sm font-medium text-gray-700">Nombre completo</label>
-        <input
-          type="text"
-          {...register('nombre')}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        />
-        {errors.nombre && <p className="mt-1 text-sm text-red-600">{errors.nombre.message}</p>}
-      </div>
+            {isSubmitted ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="text-center bg-green-50 border border-green-200 p-8 rounded-xl"
+              >
+                <h4 className="text-2xl font-semibold text-green-700 mb-2">¡Mensaje enviado con éxito! ✅</h4>
+                <p className="text-gray-600">
+                  Gracias por contactarnos. Te responderemos a la brevedad.
+                </p>
+                <button
+                  onClick={() => setIsSubmitted(false)}
+                  className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md shadow transition"
+                >
+                  Enviar otro mensaje
+                </button>
+              </motion.div>
+            ) : (
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Nombre completo</label>
+                  <input
+                    type="text"
+                    {...register('nombre')}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  />
+                  {errors.nombre && <p className="mt-1 text-sm text-red-600">{errors.nombre.message}</p>}
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700">Email</label>
-        <input
-          type="email"
-          {...register('email')}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        />
-        {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Email</label>
+                  <input
+                    type="email"
+                    {...register('email')}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  />
+                  {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700">Teléfono</label>
-        <input
-          type="tel"
-          {...register('telefono')}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        />
-        {errors.telefono && <p className="mt-1 text-sm text-red-600">{errors.telefono.message}</p>}
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Teléfono</label>
+                  <input
+                    type="tel"
+                    {...register('telefono')}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  />
+                  {errors.telefono && <p className="mt-1 text-sm text-red-600">{errors.telefono.message}</p>}
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700">Servicio</label>
-        <select
-          {...register('servicio')}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        >
-          <option value="">Seleccione un servicio</option>
-          <option value="reparacion">Reparación de Calderas</option>
-          <option value="mantenimiento">Mantenimiento Preventivo</option>
-          <option value="instalacion">Instalación Nueva</option>
-          <option value="emergencia">Emergencia 24hs</option>
-        </select>
-        {errors.servicio && <p className="mt-1 text-sm text-red-600">{errors.servicio.message}</p>}
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Servicio</label>
+                  <select
+                    {...register('servicio')}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  >
+                    <option value="">Seleccione un servicio</option>
+                    <option value="reparacion">Reparación de Calderas</option>
+                    <option value="mantenimiento">Mantenimiento Preventivo</option>
+                    <option value="instalacion">Instalación Nueva</option>
+                    <option value="emergencia">Emergencia 24hs</option>
+                  </select>
+                  {errors.servicio && <p className="mt-1 text-sm text-red-600">{errors.servicio.message}</p>}
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700">Horario de contacto preferido</label>
-        <select
-          {...register('horario')}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        >
-          <option value="">Seleccione un horario</option>
-          <option value="manana">Mañana (8:00 - 12:00)</option>
-          <option value="tarde">Tarde (12:00 - 18:00)</option>
-          <option value="urgente">Urgente - Contactar lo antes posible</option>
-        </select>
-        {errors.horario && <p className="mt-1 text-sm text-red-600">{errors.horario.message}</p>}
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Horario de contacto preferido</label>
+                  <select
+                    {...register('horario')}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  >
+                    <option value="">Seleccione un horario</option>
+                    <option value="manana">Mañana (8:00 - 12:00)</option>
+                    <option value="tarde">Tarde (12:00 - 18:00)</option>
+                    <option value="urgente">Urgente - Contactar lo antes posible</option>
+                  </select>
+                  {errors.horario && <p className="mt-1 text-sm text-red-600">{errors.horario.message}</p>}
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700">Mensaje (opcional)</label>
-        <textarea
-          {...register('mensaje')}
-          rows={4}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        ></textarea>
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Mensaje (opcional)</label>
+                  <textarea
+                    {...register('mensaje')}
+                    rows={4}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  ></textarea>
+                </div>
 
-      <input type="hidden" name="_captcha" value="false" />
-      <motion.button
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        type="submit"
-        className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-      >
-        Enviar Solicitud
-      </motion.button>
-    </form>
-  )}
-</motion.div>
+                <input type="hidden" name="_captcha" value="false" />
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="submit"
+                  className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                >
+                  Enviar Solicitud
+                </motion.button>
+              </form>
+            )}
+          </motion.div>
 
         </div>
       </div>
