@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import BrandSlider from "./BrandSlider";
 import logoBaxi from '../assets/BAXI.svg';
 import banerHome from '../assets/mantenimiento-home.webp';
+
 
 const reviews = [
   {
@@ -23,8 +25,12 @@ const reviews = [
   }
 ];
 
+
+
 const Hero = () => {
+  const navigate = useNavigate();
   const [currentReview, setCurrentReview] = React.useState(0);
+  
 
   // 🧠 Genera burbujas con posiciones y tamaños fijos
   const bubbles = React.useMemo(() => {
@@ -46,7 +52,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900" id='hero'>
       {/* Fondo animado de burbujas */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-full h-full">
@@ -120,16 +126,21 @@ const Hero = () => {
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <motion.button
+              onClick={() => {
+                navigate('/contact');
+                window.scrollTo(0, 0);
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-blue-900 bg-white hover:bg-blue-50 transition-colors duration-300 shadow-lg"
+            >
+              Solicitar Servicio Oficial
+            </motion.button>
+
+
               <motion.a
-                href="#contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-blue-900 bg-white hover:bg-blue-50 transition-colors duration-300 shadow-lg"
-              >
-                Solicitar Servicio Oficial
-              </motion.a>
-              <motion.a
-                href="https://wa.me/+5491112345678"
+                href="https://wa.me/+5491128462184"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
