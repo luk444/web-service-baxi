@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Clock, Gauge, Lock } from 'lucide-react';
 import mantenimiento from '../assets/imagenreparacionbaxi.webp';
+import { useNavigate } from 'react-router-dom';
 
 const MaintenancePlans = () => {
+  const navigate = useNavigate();
   return (
     <div className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,14 +14,18 @@ const MaintenancePlans = () => {
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
             Un mantenimiento adecuado te permitirá prolongar la vida útil de tu equipo, mejorar su rendimiento y ahorrar en tu factura energética.
           </p>
-          <motion.a
-            href="#contact"
+          <motion.button
+            onClick={() => {
+              navigate('/contact');
+              window.scrollTo(0, 0);
+            }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="mt-8 inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 shadow-lg"
           >
             Contratar plan
-          </motion.a>
+          </motion.button>
+                      
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">

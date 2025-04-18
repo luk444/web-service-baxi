@@ -1,9 +1,13 @@
 import React from 'react';
 import { PenTool as Tool, Thermometer, Wrench, Settings, AlertCircle, FileCheck, Shield } from 'lucide-react';
 import logoBaxi from '../assets/BAXI.svg';
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 
 const Services = () => {
+  const navigate = useNavigate();
   return (
     <div id="services" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,11 +59,17 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="bg-gray-50 px-8 py-4">
-              <a href="#contact" className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
+            <motion.div
+              onClick={() => {
+                navigate('/contact');
+                window.scrollTo(0, 0);
+              }}
+              className="bg-gray-50 px-8 py-4 cursor-pointer"
+            >
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
                 Solicitar servicio oficial →
-              </a>
-            </div>
+              </span>
+            </motion.div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -92,11 +102,17 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="bg-gray-50 px-8 py-4">
-              <a href="#contact" className="text-blue-600 font-medium hover:text-blue-500" aria-label="Programar mantenimiento">
-                Programar mantenimiento →
-              </a>
-            </div>
+            <motion.div
+              onClick={() => {
+                navigate('/contact');
+                window.scrollTo(0, 0);
+              }}
+              className="bg-gray-50 px-8 py-4 cursor-pointer"
+            >
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
+              Programar mantenimiento →
+              </span>
+            </motion.div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -129,11 +145,17 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="bg-gray-50 px-8 py-4">
-              <a href="#contact" className="text-blue-600 font-medium hover:text-blue-500" aria-label="Consultar instalación">
-                Consultar instalación →
-              </a>
-            </div>
+            <motion.div
+              onClick={() => {
+                navigate('/contact');
+                window.scrollTo(0, 0);
+              }}
+              className="bg-gray-50 px-8 py-4 cursor-pointer"
+            >
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
+              Consultar instalación →
+              </span>
+            </motion.div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -166,11 +188,17 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="bg-gray-50 px-8 py-4">
-              <a href="#contact" className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio">
-                Solicitar servicio →
-              </a>
-            </div>
+            <motion.div
+              onClick={() => {
+                navigate('/contact');
+                window.scrollTo(0, 0);
+              }}
+              className="bg-gray-50 px-8 py-4 cursor-pointer"
+            >
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
+              Solicitar servicio →
+              </span>
+            </motion.div>
           </div>
         </div>
 

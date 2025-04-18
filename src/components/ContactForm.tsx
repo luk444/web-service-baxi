@@ -58,7 +58,7 @@ const ContactForm = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contacto</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 mt-5">Contacto</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Estamos aquí para ayudarte. Contáctanos para programar un servicio o resolver cualquier consulta sobre tu sistema de calefacción.
           </p>

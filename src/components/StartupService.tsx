@@ -2,9 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 import logoBaxi from '../assets/BAXI.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 const StartupService = () => {
+  const navigate = useNavigate();
   return (
     <section aria-labelledby="startup-title" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,15 +43,17 @@ const StartupService = () => {
                 Solicita ahora la verificación de puesta en marcha y asegúrate de que tu equipo funciona correctamente. 
                 ¡Intervención gratuita para calderas murales y aerotermia!*
               </p>
-              <motion.a
-                href="#contact"
+              <motion.button
+                onClick={() => {
+                  navigate('/contact');
+                  window.scrollTo(0, 0);
+                }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
-                aria-label="Solicitar puesta en marcha"
               >
                 Solicítala ahora
-              </motion.a>
+              </motion.button>         
               <p className="mt-4 text-sm text-blue-100">
                 *Consulta con tu Servicio Oficial para la puesta en marcha de otros productos BAXI como calderas de gasóleo, equipos solares y aire acondicionado.
               </p>
