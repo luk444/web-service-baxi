@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const reviews = [
   {
@@ -14,12 +14,12 @@ const reviews = [
     id: 2,
     name: "María González",
     rating: 5,
-    text: "Muy satisfecha con el servicio de mantenimiento oficial BAXI. Personal altamente capacitado y precios justos.",
+    text: "Muy satisfecha con el servicio de mantenimiento. Personal altamente capacitado y precios justos.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
   },
   {
     id: 3,
-    name: "Juan Pérez",
+    name: "Juan Robledo",
     rating: 5,
     text: "La instalación de mi nueva caldera BAXI fue impecable. El servicio técnico oficial es muy profesional y eficiente.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -90,22 +90,7 @@ const Reviews = () => {
                 "{reviews[currentIndex].text}"
               </blockquote>
 
-              <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between px-4">
-                <button
-                  onClick={prevReview}
-                  className="bg-white/80 backdrop-blur p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-                  aria-label="Reseña anterior"
-                >
-                  <ChevronLeft className="h-6 w-6 text-gray-600" />
-                </button>
-                <button
-                  onClick={nextReview}
-                  className="bg-white/80 backdrop-blur p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-                  aria-label="Siguiente reseña"
-                >
-                  <ChevronRight className="h-6 w-6 text-gray-600" />
-                </button>
-              </div>
+             
             </motion.div>
           </AnimatePresence>
 

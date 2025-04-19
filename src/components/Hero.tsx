@@ -20,7 +20,7 @@ const reviews = [
   },
   {
     id: 3,
-    name: "Juan Pérez",
+    name: "Juan Robledo",
     text: "Instalación profesional con garantía oficial BAXI.",
   }
 ];
