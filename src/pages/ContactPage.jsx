@@ -18,7 +18,7 @@ const ContactPage = () => (
         content="contacto Baxi, solicitar service Baxi, asistencia técnica calderas, turno reparación caldera, urgencias Baxi, servicio técnico calderas"
       />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://baxi-calderas.netlify.app/contact" />
+      <link rel="canonical" href="https://baxi-service.com/contact" />
     </Helmet>
 
 

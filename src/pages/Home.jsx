@@ -41,7 +41,7 @@ const Home = () => {
           <meta name="robots" content="index, follow" />
           <meta name="author" content="Servicio Oficial Baxi" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="canonical" href="https://baxi-calderas.netlify.app/" />
+          <link rel="canonical" href="https://baxi-service.com/" />
         </Helmet>
 
         <Navbar />

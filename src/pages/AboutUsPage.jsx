@@ -18,7 +18,7 @@ const AboutUsPage = () => (
         content="service técnico Baxi, técnicos autorizados Baxi, empresa Baxi Argentina, expertos calderas, especialistas calefacción, experiencia Baxi"
       />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://baxi-calderas.netlify.app/about" />
+      <link rel="canonical" href="https://baxi-service.com/about" />
     </Helmet>
 
 
