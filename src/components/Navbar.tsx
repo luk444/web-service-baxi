@@ -10,7 +10,6 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Si hay un hash en la URL, scrollear a esa sección después de que la página cargue
     if (location.hash) {
       const id = location.hash.replace('#', '');
       const element = document.getElementById(id);
@@ -20,7 +19,6 @@ const Navbar = () => {
     }
   }, [location]);
 
-  // Función para manejar navegación hacia una sección
   const handleScrollTo = (id: string) => {
     if (location.pathname !== '/') {
       navigate('/', { state: { scrollTo: id } });
@@ -30,15 +28,18 @@ const Navbar = () => {
     }
   };
 
-  // Función para manejar la navegación a contacto
   const handleContactClick = () => {
     navigate('/contact');
     window.scrollTo(0, 0);
   };
 
-  // Función para manejar la navegación a about
   const handleAboutClick = () => {
     navigate('/about');
+    window.scrollTo(0, 0);
+  };
+
+  const handleCoverageClick = () => {
+    navigate('/cobertura');
     window.scrollTo(0, 0);
   };
 
@@ -46,7 +47,6 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo que lleva a home */}
           <button
             onClick={() => handleScrollTo('hero')}
             className="flex items-center space-x-2 focus:outline-none"
@@ -62,8 +62,6 @@ const Navbar = () => {
             </div>
           </button>
 
-
-          {/* Teléfono y menú mobile */}
           <div className="flex items-center space-x-4">
             <a
               href={`tel:${phoneNumber}`}
@@ -85,13 +83,15 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Menú desktop */}
           <div className="hidden md:flex items-center space-x-8">
             <button onClick={handleAboutClick} className="text-gray-700 hover:text-blue-600">
               Sobre Nosotros
             </button>
             <button onClick={() => handleScrollTo('services')} className="text-gray-700 hover:text-blue-600">
               Servicios
+            </button>
+            <button onClick={handleCoverageClick} className="text-gray-700 hover:text-blue-600">
+              Cobertura
             </button>
             <button onClick={handleContactClick} className="text-gray-700 hover:text-blue-600">
               Contacto
@@ -107,7 +107,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Menú mobile desplegable */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="px-4 py-2 space-y-2">
@@ -128,6 +127,15 @@ const Navbar = () => {
               className="block py-2 text-gray-700 hover:text-blue-600 w-full text-left"
             >
               Servicios
+            </button>
+            <button 
+              onClick={() => {
+                handleCoverageClick();
+                setIsMenuOpen(false);
+              }}
+              className="block py-2 text-gray-700 hover:text-blue-600 w-full text-left"
+            >
+              Cobertura
             </button>
             <button 
               onClick={() => {
