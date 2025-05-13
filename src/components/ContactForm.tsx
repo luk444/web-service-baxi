@@ -26,7 +26,7 @@ const ContactForm = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      const response = await fetch("https://formsubmit.co/ajax/lucabussines23@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/baxioficial@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -103,11 +103,11 @@ const ContactForm = () => {
                   <div className="w-full space-y-2">
                     <div className="flex flex-col">
                       <span className="text-sm text-gray-500">Lunes a Viernes</span>
-                      <span className="text-gray-700">8:00 - 18:00</span>
+                      <span className="text-gray-700">8:00 - 16:30</span>
                     </div>
                     <div className="flex flex-col">
                       <span className="text-sm text-gray-500">Sábados</span>
-                      <span className="text-gray-700">9:00 - 13:00</span>
+                      <span className="text-gray-700">9:00 - 14:00</span>
                     </div>
                     <div className="mt-2">
                       <span className="text-blue-600 font-medium">Emergencias 24/7</span>
