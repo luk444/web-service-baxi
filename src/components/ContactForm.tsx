@@ -25,28 +25,36 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = React.useState(false);
 
   const onSubmit = async (data: FormData) => {
-    try {
-      const response = await fetch("https://formsubmit.co/ajax/baxioficial@gmail.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/baxioficial@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-      if (response.ok) {
-        setIsSubmitted(true);
-        reset();
-      } else {
-        alert("Error al enviar el mensaje");
+    if (response.ok) {
+      // 🔹 Aquí va el evento de conversión de Google Ads
+      if (window.gtag) {
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-17018460382/OGlVCMrQ9cMaEN6xhLM_',
+          value: 1.0,
+          currency: 'ARS'
+        });
       }
 
-    } catch (error) {
-      console.error("Error al enviar el mensaje:", error);
+      setIsSubmitted(true);
+      reset();
+    } else {
       alert("Error al enviar el mensaje");
     }
-  };
+  } catch (error) {
+    console.error("Error al enviar el mensaje:", error);
+    alert("Error al enviar el mensaje");
+  }
+};
 
   return (
     <div id="contact" className="bg-gray-50 py-16 md:py-24">
