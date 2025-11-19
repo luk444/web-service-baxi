@@ -2,7 +2,7 @@ import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 
 const ContactCTA = () => {
-  const phoneNumber = "+5491128462184"; // Replace with your phone number
+  const phoneNumber = "+5491177213649"; // Replace with your phone number
 
   return (
     <div className="bg-blue-600">
@@ -23,7 +23,7 @@ const ContactCTA = () => {
         </a>
 
         <a
-          href="https://wa.me/5491128462184"
+          href="https://wa.me/5491177213649"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-500 hover:bg-green-600 shadow-md"
