@@ -26,7 +26,7 @@ const ContactForm = () => {
 
   const onSubmit = async (data: FormData) => {
   try {
-    const response = await fetch("https://formsubmit.co/ajax/baxioficial@gmail.com", {
+    const response = await fetch("https://formsubmit.co/ajax/oficialbaxiservice@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
