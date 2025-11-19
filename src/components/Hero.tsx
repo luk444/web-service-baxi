@@ -140,7 +140,7 @@ const Hero = () => {
 
 
               <motion.a
-                href="https://wa.me/+5491128462184"
+                href="https://wa.me/+5491177213649"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
