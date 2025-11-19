@@ -24,7 +24,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
                 <a href="mailto:info@calderapro.com" className="hover:text-blue-400">
-                baxioficial@gmail.com
+                oficialbaxiservice@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
