@@ -91,13 +91,13 @@ const ContactForm = () => {
                     <div className="flex flex-col">
                       <span className="text-sm text-gray-500">Fijo</span>
                       <a href="tel:+5491177213649" className="text-blue-600 hover:text-blue-700 transition-colors">
-                        (011)7721-3649
+                        (011)2846-2184
                       </a>
                     </div>
                     <div className="flex flex-col">
                       <span className="text-sm text-gray-500">Celular</span>
-                      <a href="tel:+5491177213649" className="text-blue-600 hover:text-blue-700 transition-colors">
-                        +54 9 11 7721-3649
+                      <a href="tel:+5491128462184" className="text-blue-600 hover:text-blue-700 transition-colors">
+                        +54 9 11 2846-2184
                       </a>
                     </div>
                   </div>
@@ -136,7 +136,7 @@ const ContactForm = () => {
                       href="mailto:info@calderapro.com" 
                       className="text-blue-600 hover:text-blue-700 transition-colors break-all"
                     >
-                      oficialbaxiservice@gmail.com
+                      baxioficial@gmail.com
                     </a>
                   </div>
                 }
