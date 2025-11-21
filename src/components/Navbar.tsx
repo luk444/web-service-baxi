@@ -5,7 +5,7 @@ import logoBaxi from '../assets/BAXI.svg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const phoneNumber = "+5491177213649";
+  const phoneNumber = "+5491128462184";
   const location = useLocation();
   const navigate = useNavigate();
 
