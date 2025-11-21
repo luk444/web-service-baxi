@@ -40,7 +40,7 @@ const Cobertura = () => {
 
           {/* Call Now Button */}
           <motion.a
-            href="tel:+5491177213649"
+            href="tel:+5491128462184"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-blue-600 text-white rounded-full font-semibold shadow-lg hover:bg-blue-700 transition-colors"
