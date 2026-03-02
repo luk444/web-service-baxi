@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
-import logoBaxi from '../assets/BAXI.svg';
+import logoHorizontal from '../assets/baxi_service_horizontal_transparent.png';
+import logoMobile from '../assets/baxi_service_two_lines_transparent.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -51,14 +52,18 @@ const Navbar = () => {
             onClick={() => handleScrollTo('hero')}
             className="flex items-center space-x-2 focus:outline-none"
           >
+            {/* Logo horizontal para desktop */}
             <img 
-              src={logoBaxi}
-              alt="BAXI"
-              className="h-8"
+              src={logoHorizontal}
+              alt="BaxiService - Servicio Técnico"
+              className="h-10 hidden md:block"
             />
-            <div className="flex flex-col text-left">
-              <span className="text-xl font-bold text-blue-600"></span>
-            </div>
+            {/* Logo dos líneas para mobile */}
+            <img 
+              src={logoMobile}
+              alt="BaxiService - Servicio Técnico"
+              className="h-12 md:hidden"
+            />
           </button>
 
           <div className="flex items-center space-x-4">
