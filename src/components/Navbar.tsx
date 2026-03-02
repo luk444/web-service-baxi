@@ -58,7 +58,6 @@ const Navbar = () => {
             />
             <div className="flex flex-col text-left">
               <span className="text-xl font-bold text-blue-600"></span>
-              <span className="text-sm text-gray-600 hidden sm:block">Servicio Técnico Independiente</span>
             </div>
           </button>
 
