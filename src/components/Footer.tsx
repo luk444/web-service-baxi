@@ -42,8 +42,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-blue-400" />
-                <a href="mailto:contacto@baxi-service.com" className="hover:text-blue-400">
-                  contacto@baxi-service.com
+                <a href="mailto:baxiserv@gmail.com" className="hover:text-blue-400">
+                  baxiserv@gmail.com
                 </a>
               </li>
               <li className="flex items-start">

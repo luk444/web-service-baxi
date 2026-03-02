@@ -26,7 +26,7 @@ const ContactForm = () => {
 
   const onSubmit = async (data: FormData) => {
   try {
-    const response = await fetch("https://formsubmit.co/ajax/contacto@baxi-service.com", {
+    const response = await fetch("https://formsubmit.co/ajax/baxiserv@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -136,7 +136,7 @@ const ContactForm = () => {
                       href="mailto:info@calderapro.com" 
                       className="text-blue-600 hover:text-blue-700 transition-colors break-all"
                     >
-                      baxioficial@gmail.com
+                      baxiserv@gmail.com
                     </a>
                   </div>
                 }
