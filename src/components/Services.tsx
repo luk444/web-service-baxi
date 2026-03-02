@@ -15,16 +15,16 @@ const Services = () => {
           <div className="flex justify-center items-center mb-6">
             <img 
               src={logoBaxi}
-              alt="Logo de BAXI"
+              alt="Especialistas en calderas BAXI"
               className="h-12 mr-4"
             />
             <div className="bg-blue-600 text-white px-4 py-2 rounded-lg">
-              Servicio Técnico Oficial
+              Servicio Técnico Especializado
             </div>
           </div>
           <h2 className="text-4xl font-bold text-gray-900">Nuestros Servicios</h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Servicio técnico oficial BAXI, ofreciendo soluciones integrales con la garantía del fabricante
+            Servicio técnico independiente especializado en calderas BAXI y multimarca, ofreciendo soluciones integrales con garantía de nuestro servicio
           </p>
         </div>
 
@@ -36,25 +36,25 @@ const Services = () => {
                   <Tool className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="ml-4 text-2xl font-semibold text-gray-900">
-                  Servicio Oficial BAXI
+                  Reparación de Calderas
                 </h3>
               </div>
               <div className="mt-6 space-y-4">
                 <p className="text-gray-600">
-                  Servicio técnico autorizado por BAXI:
+                  Servicio técnico especializado en calderas BAXI:
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center">
                     <Shield className="h-5 w-5 text-blue-600 mr-3" />
-                    Garantía oficial del fabricante
+                    Garantía de nuestro servicio
                   </li>
                   <li className="flex items-center">
                     <Settings className="h-5 w-5 text-blue-600 mr-3" />
-                    Repuestos originales BAXI
+                    Repuestos de calidad compatibles
                   </li>
                   <li className="flex items-center">
                     <FileCheck className="h-5 w-5 text-blue-600 mr-3" />
-                    Técnicos certificados por BAXI
+                    Técnicos con más de 15 años de experiencia
                   </li>
                 </ul>
               </div>
@@ -66,8 +66,8 @@ const Services = () => {
               }}
               className="bg-gray-50 px-8 py-4 cursor-pointer"
             >
-              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
-                Solicitar servicio oficial →
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio técnico">
+                Solicitar servicio →
               </span>
             </motion.div>
           </div>
@@ -84,20 +84,20 @@ const Services = () => {
               </div>
               <div className="mt-6 space-y-4">
                 <p className="text-gray-600">
-                  Programas de mantenimiento oficial BAXI:
+                  Programas de mantenimiento profesional:
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center">
                     <Settings className="h-5 w-5 text-blue-600 mr-3" />
-                    Revisión según protocolo BAXI
+                    Revisión completa del equipo
                   </li>
                   <li className="flex items-center">
                     <AlertCircle className="h-5 w-5 text-blue-600 mr-3" />
-                    Optimización y eficiencia
+                    Optimización y eficiencia energética
                   </li>
                   <li className="flex items-center">
                     <FileCheck className="h-5 w-5 text-blue-600 mr-3" />
-                    Certificación oficial
+                    Informe técnico detallado
                   </li>
                 </ul>
               </div>
@@ -109,7 +109,7 @@ const Services = () => {
               }}
               className="bg-gray-50 px-8 py-4 cursor-pointer"
             >
-              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Programar mantenimiento">
               Programar mantenimiento →
               </span>
             </motion.div>
@@ -127,20 +127,20 @@ const Services = () => {
               </div>
               <div className="mt-6 space-y-4">
                 <p className="text-gray-600">
-                  Instalación oficial de calderas BAXI:
+                  Instalación profesional de calderas:
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center">
                     <Settings className="h-5 w-5 text-blue-600 mr-3" />
-                    Asesoramiento especializado BAXI
+                    Asesoramiento técnico personalizado
                   </li>
                   <li className="flex items-center">
                     <AlertCircle className="h-5 w-5 text-blue-600 mr-3" />
-                    Instalación certificada
+                    Instalación profesional
                   </li>
                   <li className="flex items-center">
                     <FileCheck className="h-5 w-5 text-blue-600 mr-3" />
-                    Garantía extendida
+                    Garantía de mano de obra
                   </li>
                 </ul>
               </div>
@@ -152,7 +152,7 @@ const Services = () => {
               }}
               className="bg-gray-50 px-8 py-4 cursor-pointer"
             >
-              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Consultar instalación">
               Consultar instalación →
               </span>
             </motion.div>
@@ -170,7 +170,7 @@ const Services = () => {
               </div>
               <div className="mt-6 space-y-4">
                 <p className="text-gray-600">
-                  Además de ser servicio oficial BAXI, trabajamos con todas las marcas:
+                  Además de especializarnos en BAXI, trabajamos con todas las marcas:
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center">
@@ -195,7 +195,7 @@ const Services = () => {
               }}
               className="bg-gray-50 px-8 py-4 cursor-pointer"
             >
-              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio oficial">
+              <span className="text-blue-600 font-medium hover:text-blue-500" aria-label="Solicitar servicio multimarca">
               Solicitar servicio →
               </span>
             </motion.div>
@@ -207,7 +207,7 @@ const Services = () => {
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold">Servicio Integral de Calefacción</h3>
             <p className="mt-2 text-white">
-              Servicio oficial BAXI y soluciones profesionales para todas las marcas
+              Servicio técnico independiente especializado en calderas BAXI y todas las marcas
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -217,7 +217,7 @@ const Services = () => {
               </div>
               <h4 className="text-lg font-semibold mb-2">Calderas BAXI</h4>
               <p className="text-white">
-                Especialistas certificados en toda la gama BAXI
+                Técnicos con amplia experiencia en toda la gama BAXI
               </p>
             </div>
             <div className="text-center">

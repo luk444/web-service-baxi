@@ -7,7 +7,7 @@ const reviews = [
     id: 1,
     name: "Carlos Rodríguez",
     rating: 5,
-    text: "Excelente servicio oficial BAXI. Los técnicos son muy profesionales y resolvieron el problema de mi caldera rápidamente.",
+    text: "Excelente servicio técnico. Los técnicos son muy profesionales y resolvieron el problema de mi caldera BAXI rápidamente.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
   },
   {
@@ -21,7 +21,7 @@ const reviews = [
     id: 3,
     name: "Juan Robledo",
     rating: 5,
-    text: "La instalación de mi nueva caldera BAXI fue impecable. El servicio técnico oficial es muy profesional y eficiente.",
+    text: "La instalación de mi nueva caldera BAXI fue impecable. El equipo técnico es muy profesional y eficiente.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
   }
 ];
@@ -47,10 +47,10 @@ const Reviews = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 id="reviews-title" className="text-3xl font-bold text-gray-900">
-            Lo que dicen nuestros clientes sobre el Servicio Oficial BAXI
+            Lo que dicen nuestros clientes
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Más de 5000 clientes satisfechos avalan nuestro servicio técnico oficial
+            Más de 5000 clientes satisfechos avalan nuestro servicio técnico especializado
           </p>
         </div>
 

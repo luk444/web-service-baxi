@@ -8,14 +8,14 @@ import Footer from '../components/Footer';
 const AboutUsPage = () => (
   <>
     <Helmet>
-      <title>Quiénes Somos | Técnicos Autorizados Baxi en Argentina</title>
+      <title>Quiénes Somos | BaxiService - Servicio Técnico Independiente</title>
       <meta
         name="description"
-        content="Somos especialistas en calderas Baxi con más de 10 años de experiencia en el rubro. Ofrecemos un servicio técnico autorizado con compromiso, rapidez y atención personalizada."
+        content="Somos una empresa independiente especializada en calderas BAXI con más de 15 años de experiencia. Servicio técnico profesional con compromiso, rapidez y atención personalizada."
       />
       <meta
         name="keywords"
-        content="service técnico Baxi, técnicos autorizados Baxi, empresa Baxi Argentina, expertos calderas, especialistas calefacción, experiencia Baxi"
+        content="servicio técnico calderas, técnicos especializados BAXI, empresa calderas Argentina, expertos calderas, especialistas calefacción, servicio independiente"
       />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://baxi-service.com/about" />

@@ -1,261 +1,151 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Building2, Award, Users, PenTool as Tool, Thermometer, Radiation as Radiator, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
-import logoBaxi from '../assets/BAXI.svg';
-
-
-const certifications = [
-  {
-    title: "Instalador Oficial Certificado",
-    description: "Autorizado para realizar instalaciones con garantía oficial del fabricante",
-    icon: CheckCircle
-  },
-  {
-    title: "Servicio Técnico Autorizado",
-    description: "Capacitados para realizar mantenimiento y reparaciones oficiales",
-    icon: Award
-  },
-  {
-    title: "Especialista en Calderas de Condensación",
-    description: "Expertos en la última tecnología de calderas eficientes",
-    icon: Thermometer
-  },
-  {
-    title: "Centro de Formación Continua",
-    description: "Actualización constante en las últimas tecnologías BAXI",
-    icon: Users
-  }
-];
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Building2, Award, Users, Wrench, Shield, Clock, CheckCircle } from 'lucide-react';
 
 const AboutUs = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
-
-  const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 0
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1
-    },
-    exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 0
-    })
-  };
-
-  const paginate = (newDirection: number) => {
-    setDirection(newDirection);
-    setCurrentIndex((prevIndex) => {
-      let newIndex = prevIndex + newDirection;
-      if (newIndex >= certifications.length) newIndex = 0;
-      if (newIndex < 0) newIndex = certifications.length - 1;
-      return newIndex;
-    });
-  };
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      paginate(1);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <div id="about" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Sección Empresa */}
+        {/* Título principal */}
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex justify-center items-center mb-6">
-              <img 
-                src={logoBaxi}
-                alt="BAXILOGO-HOME"
-                className="h-12 mr-4"
-              />
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-lg">
-                Servicio Técnico Oficial
-              </div>
-            </div>
-            <h2 className="text-4xl font-bold text-gray-900">Sobre Nosotros</h2>
-            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              Servicio técnico oficial BAXI con más de una década de experiencia, especializados en soluciones integrales de calefacción
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Sobre Nosotros</h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Somos un servicio técnico independiente especializado en sistemas de calefacción y calderas domiciliarias, 
+              con más de 15 años de experiencia brindando soluciones de instalación, mantenimiento y reparación 
+              en Capital Federal y Gran Buenos Aires.
             </p>
           </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        {/* Descripción extendida */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
+            <p>
+              Nuestro objetivo es ofrecer un servicio profesional, transparente y confiable, ayudando a cada cliente 
+              a mantener su sistema de calefacción funcionando de forma segura y eficiente durante todo el año.
+            </p>
+            <p>
+              Trabajamos diariamente con equipos de distintas marcas del mercado, incluyendo <strong>BAXI, Peisa, Ariston, 
+              Caldaia, Euterma</strong> y otras, lo que nos permite diagnosticar y resolver fallas en una amplia variedad 
+              de modelos y tecnologías.
+            </p>
+            <p>
+              Contamos con técnicos con amplia experiencia práctica en sistemas de calefacción residencial, enfocados 
+              en brindar soluciones reales, asesoramiento claro y atención personalizada en cada visita.
+            </p>
+          </div>
+        </div>
+
+        {/* Aviso de servicio independiente - DESTACADO */}
+        <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-6 mb-12">
+          <div className="flex items-start">
+            <Shield className="h-8 w-8 text-amber-600 mr-4 flex-shrink-0 mt-1" />
+            <div>
+              <h3 className="text-xl font-bold text-amber-800 mb-3">Servicio técnico independiente</h3>
+              <p className="text-amber-700 leading-relaxed">
+                Somos una empresa independiente dedicada al mantenimiento y reparación de calderas. 
+                <strong> No somos servicio oficial ni estamos afiliados, autorizados o representamos a los fabricantes 
+                de las marcas mencionadas.</strong> Las marcas se nombran únicamente con fines informativos y de compatibilidad técnica.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Tres columnas de características */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             className="bg-white p-6 rounded-xl shadow-lg"
           >
             <Building2 className="h-12 w-12 text-blue-600 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Servicio Oficial BAXI</h3>
+            <h3 className="text-xl font-semibold mb-3">Empresa Independiente</h3>
             <p className="text-gray-600">
-              Certificados y autorizados por BAXI para realizar instalaciones, mantenimiento y reparaciones con garantía oficial.
+              Servicio técnico propio sin afiliación a fabricantes. Trabajamos con todas las marcas del mercado 
+              ofreciendo soluciones imparciales y adaptadas a cada necesidad.
             </p>
           </motion.div>
 
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             className="bg-white p-6 rounded-xl shadow-lg"
           >
             <Award className="h-12 w-12 text-blue-600 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">15 Años de Experiencia</h3>
+            <h3 className="text-xl font-semibold mb-3">Más de 15 Años de Experiencia</h3>
             <p className="text-gray-600">
-              Especialistas certificados en calderas BAXI y amplia experiencia con todas las marcas líderes del mercado.
+              Amplia trayectoria trabajando con equipos BAXI, Peisa, Ariston y otras marcas líderes del mercado argentino.
             </p>
           </motion.div>
 
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             className="bg-white p-6 rounded-xl shadow-lg"
           >
             <Users className="h-12 w-12 text-blue-600 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Equipo Certificado</h3>
+            <h3 className="text-xl font-semibold mb-3">Técnicos con Experiencia</h3>
             <p className="text-gray-600">
-              Técnicos formados directamente por BAXI y en constante actualización con las últimas tecnologías.
+              Equipo de profesionales con experiencia práctica comprobable en sistemas de calefacción residencial.
             </p>
           </motion.div>
         </div>
 
-        {/* Certificaciones BAXI - Nueva versión con slider */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 mb-20">
-          <h3 className="text-2xl font-bold text-center mb-12">Certificaciones Oficiales BAXI</h3>
-          
-          <div className="relative h-64 overflow-hidden">
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10">
-              <button 
-                onClick={() => paginate(-1)}
-                className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
-              >
-                <ChevronLeft className="h-6 w-6 text-blue-600" />
-              </button>
-            </div>
-            
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10">
-              <button 
-                onClick={() => paginate(1)}
-                className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
-              >
-                <ChevronRight className="h-6 w-6 text-blue-600" />
-              </button>
-            </div>
+        {/* Nuestra experiencia */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Nuestra Experiencia</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "Más de 15 años trabajando en sistemas de calefacción residencial",
+              "Diagnóstico y reparación multimarca",
+              "Instalación y puesta en marcha de equipos",
+              "Optimización de rendimiento energético",
+              "Mantenimiento preventivo y correctivo",
+              "Atención en Capital Federal y GBA"
+            ].map((item, index) => (
+              <div key={index} className="flex items-start">
+                <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                <span className="text-gray-600">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
 
-            <AnimatePresence initial={false} custom={direction}>
-              <motion.div
-                key={currentIndex}
-                custom={direction}
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.2 }
-                }}
-                className="absolute w-full h-full flex flex-col items-center justify-center px-4"
-              >
-                {React.createElement(certifications[currentIndex].icon, {
-                  className: "h-16 w-16 text-blue-600 mb-6"
-                })}
-                <h4 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
-                  {certifications[currentIndex].title}
-                </h4>
-                <p className="text-gray-600 text-center max-w-2xl">
-                  {certifications[currentIndex].description}
-                </p>
-              </motion.div>
-            </AnimatePresence>
-
-            <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-2">
-              {certifications.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    setDirection(index > currentIndex ? 1 : -1);
-                    setCurrentIndex(index);
-                  }}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentIndex ? 'bg-blue-600' : 'bg-blue-200'
-                  }`}
-                />
-              ))}
+        {/* Nuestro compromiso */}
+        <div className="bg-blue-600 rounded-2xl shadow-lg p-8 text-white">
+          <div className="flex items-start">
+            <Clock className="h-10 w-10 mr-4 flex-shrink-0" />
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Nuestro Compromiso</h3>
+              <p className="text-blue-100 text-lg leading-relaxed">
+                Priorizamos la seguridad, la transparencia y la correcta información al cliente, 
+                ofreciendo presupuestos claros y soluciones adaptadas a cada necesidad. 
+                Brindamos garantía sobre el trabajo realizado y utilizamos repuestos compatibles de calidad.
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Sección Técnica */}
-        <div className="mt-24">
-          <h3 className="text-3xl font-bold text-center mb-16">Especialización Técnica</h3>
-          
-          <div className="grid lg:grid-cols-3 gap-12">
-            <div className="space-y-6">
-              <div className="flex items-center mb-4">
-                <Tool className="h-8 w-8 text-blue-600 mr-4" />
-                <h4 className="text-2xl font-semibold">Calderas BAXI</h4>
-              </div>
-              <p className="text-gray-600">
-                Especialistas certificados en toda la gama de calderas BAXI:
-              </p>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Calderas de condensación BAXI</li>
-                <li>Calderas de baja temperatura</li>
-                <li>Sistemas híbridos BAXI</li>
-                <li>Calderas de biomasa</li>
-              </ul>
-              <p className="text-gray-600">
-                Servicio integral con repuestos originales BAXI y garantía oficial del fabricante.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <div className="flex items-center mb-4">
-                <Thermometer className="h-8 w-8 text-blue-600 mr-4" />
-                <h4 className="text-2xl font-semibold">Sistemas de Calefacción</h4>
-              </div>
-              <p className="text-gray-600">
-                Expertos en sistemas de calefacción BAXI y otras marcas:
-              </p>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Sistemas de control inteligente BAXI</li>
-                <li>Instalación de termostatos</li>
-                <li>Optimización energética</li>
-                <li>Soluciones conectadas</li>
-              </ul>
-              <p className="text-gray-600">
-                Diseñamos e instalamos sistemas adaptados a sus necesidades específicas.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <div className="flex items-center mb-4">
-                <Radiator className="h-8 w-8 text-blue-600 mr-4" />
-                <h4 className="text-2xl font-semibold">Servicios Integrales</h4>
-              </div>
-              <p className="text-gray-600">
-                Soluciones completas para su confort:
-              </p>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Mantenimiento preventivo oficial</li>
-                <li>Reparación con garantía BAXI</li>
-                <li>Instalaciones certificadas</li>
-                <li>Asesoramiento especializado</li>
-              </ul>
-              <p className="text-gray-600">
-                Servicio técnico multimarca con especialización BAXI.
-              </p>
-            </div>
+        {/* Marcas con las que trabajamos */}
+        <div className="mt-12 text-center">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Marcas con las que trabajamos</h3>
+          <p className="text-gray-500 text-sm mb-4">
+            (Las marcas se mencionan únicamente con fines de compatibilidad técnica, sin afiliación comercial)
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            {["BAXI", "Peisa", "Ariston", "Caldaia", "Euterma", "Otras marcas"].map((marca, index) => (
+              <span 
+                key={index}
+                className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium"
+              >
+                {marca}
+              </span>
+            ))}
           </div>
         </div>
+
       </div>
     </div>
   );

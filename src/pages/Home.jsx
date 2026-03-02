@@ -29,17 +29,17 @@ const Home = () => {
     <PageTransition>
       <div className="min-h-screen bg-white overflow-x-hidden">
         <Helmet>
-          <title>Service Oficial Baxi | Reparación, Mantenimiento y Puesta en Marcha</title>
+          <title>BaxiService | Servicio Técnico de Calderas BAXI - Reparación y Mantenimiento</title>
           <meta
             name="description"
-            content="Service técnico oficial de calderas Baxi en Argentina. Realizamos reparación de calderas individuales y centrales, mantenimiento preventivo y puestas en marcha con garantía."
+            content="Servicio técnico independiente especializado en calderas BAXI en Argentina. Reparación de calderas individuales y centrales, mantenimiento preventivo y puestas en marcha con garantía de servicio."
           />
           <meta
             name="keywords"
-            content="service oficial Baxi, reparación calderas Baxi, mantenimiento calderas, puesta en marcha caldera, service Baxi Argentina, técnico caldera Baxi, urgencias calderas Baxi"
+            content="servicio técnico calderas BAXI, reparación calderas BAXI, mantenimiento calderas, puesta en marcha caldera, service calderas Argentina, técnico caldera BAXI, urgencias calderas"
           />
           <meta name="robots" content="index, follow" />
-          <meta name="author" content="Servicio Oficial Baxi" />
+          <meta name="author" content="BaxiService - Servicio Técnico Independiente" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="canonical" href="https://baxi-service.com/" />
         </Helmet>

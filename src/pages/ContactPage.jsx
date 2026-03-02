@@ -8,14 +8,14 @@ import Footer from '../components/Footer';
 const ContactPage = () => (
   <>
     <Helmet>
-      <title>Contactanos | Servicio Técnico Oficial de Calderas Baxi</title>
+      <title>Contacto | BaxiService - Servicio Técnico de Calderas</title>
       <meta
         name="description"
-        content="Solicitá una visita para mantenimiento o reparación de calderas Baxi. Atención urgente, asesoramiento técnico y puestas en marcha. ¡Escribinos ahora!"
+        content="Solicitá una visita para mantenimiento o reparación de calderas BAXI. Atención urgente, asesoramiento técnico y puestas en marcha. Servicio técnico independiente."
       />
       <meta
         name="keywords"
-        content="contacto Baxi, solicitar service Baxi, asistencia técnica calderas, turno reparación caldera, urgencias Baxi, servicio técnico calderas"
+        content="contacto BaxiService, solicitar servicio calderas, asistencia técnica calderas, turno reparación caldera, urgencias calderas, servicio técnico calderas"
       />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://baxi-service.com/contact" />

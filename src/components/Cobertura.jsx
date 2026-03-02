@@ -32,10 +32,10 @@ const Cobertura = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Área de cobertura - Caldera Baxi Service Oficial
+            Área de Cobertura - BaxiService
           </h2>
           <p className="text-lg text-gray-600">
-            Servicio Técnico Oficial calderas Baxi en el día
+            Servicio técnico especializado en calderas BAXI - Atención en el día
           </p>
 
           {/* Call Now Button */}
@@ -74,7 +74,7 @@ const Cobertura = () => {
           className="text-center mt-12"
         >
           <p className="text-gray-600">
-            Service Oficial Calderas Baxi www.baxi-service.com | Servicio Técnico Oficial calderas Baxi en el día, atención en Capital Federal, GBA zona norte, zona oeste, zona sur.
+            BaxiService - Servicio técnico independiente especializado en calderas BAXI | Atención en el día en Capital Federal, GBA zona norte, zona oeste, zona sur.
           </p>
         </motion.div>
       </div>

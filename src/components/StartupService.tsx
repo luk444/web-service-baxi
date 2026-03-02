@@ -20,7 +20,7 @@ const StartupService = () => {
           >
             <img 
               src={logoBaxi}
-              alt="BAXI"
+              alt="Especialistas en calderas BAXI"
               className="h-16 mb-4"
             />
             <motion.div
@@ -29,7 +29,7 @@ const StartupService = () => {
               transition={{ duration: 0.5 }}
               className="bg-blue-600 text-white px-6 py-3 rounded-xl inline-block transform hover:scale-105 transition-transform"
             >
-              Servicio Técnico Oficial
+              Servicio Técnico Especializado
             </motion.div>
           </motion.div>
         </div>
@@ -55,7 +55,7 @@ const StartupService = () => {
                 Solicítala ahora
               </motion.button>         
               <p className="mt-4 text-sm text-blue-100">
-                *Consulta con tu Servicio Oficial para la puesta en marcha de otros productos BAXI como calderas de gasóleo, equipos solares y aire acondicionado.
+                *Consultanos para la puesta en marcha de otros equipos como calderas de gasóleo, equipos solares y aire acondicionado.
               </p>
             </div>
             <div>
@@ -85,7 +85,7 @@ const StartupService = () => {
           <h3 className="text-2xl font-bold mb-6">¿Qué es la puesta en marcha y por qué es importante?</h3>
           <div className="space-y-4 text-gray-600">
             <p>
-              La verificación de puesta en marcha es un proceso esencial para garantizar que tu nuevo equipo funciona correctamente y de forma segura. Durante esta intervención, nuestros expertos del Servicio Técnico Oficial realizarán una serie de comprobaciones para asegurar que el equipo ha sido correctamente instalado y que cumple con todos los requisitos y recomendaciones del fabricante.
+              La verificación de puesta en marcha es un proceso esencial para garantizar que tu nuevo equipo funciona correctamente y de forma segura. Durante esta intervención, nuestros técnicos especializados realizarán una serie de comprobaciones para asegurar que el equipo ha sido correctamente instalado y que cumple con todos los requisitos técnicos de seguridad.
             </p>
             <p>
               Al completar esta verificación, el equipo técnico te proporcionará un informe detallado en el que describirá las pruebas realizadas, sus resultados y si se ha aplicado algún método correctivo.

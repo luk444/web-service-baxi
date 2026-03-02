@@ -11,17 +11,17 @@ const reviews = [
   {
     id: 1,
     name: "Carlos Rodríguez",
-    text: "Excelente servicio oficial BAXI, muy profesionales y puntuales.",
+    text: "Excelente servicio técnico, muy profesionales y puntuales con mi caldera BAXI.",
   },
   {
     id: 2,
     name: "María González",
-    text: "El mejor servicio técnico oficial de BAXI en la zona.",
+    text: "El mejor servicio técnico especializado en calderas de la zona.",
   },
   {
     id: 3,
     name: "Juan Robledo",
-    text: "Instalación profesional con garantía oficial BAXI.",
+    text: "Instalación profesional y garantía del servicio incluida.",
   }
 ];
 
@@ -91,20 +91,20 @@ const Hero = () => {
             <div className="mb-6 inline-block">
               <img 
                 src={logoBaxi}
-                alt="BAXI Official Service"
+                alt="Especialistas en calderas BAXI"
                 className="h-16 mb-4"
               />
               <div className="bg-blue-500/20 backdrop-blur-sm rounded-lg px-4 py-2 inline-block">
-                <span className="text-white font-semibold">Servicio Técnico Oficial</span>
+                <span className="text-white font-semibold">Servicio Técnico Especializado</span>
               </div>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-              Expertos en <span className="text-blue-400">Calderas BAXI</span>
+              Especialistas en <span className="text-blue-400">Calderas BAXI</span>
             </h1>
             <p className="mt-6 text-xl text-blue-100">
-              Servicio técnico oficial BAXI con más de 15 años brindando soluciones profesionales en instalación, 
-              reparación y mantenimiento de calderas.
+              Servicio técnico independiente con más de 15 años de experiencia brindando soluciones profesionales en instalación, 
+              reparación y mantenimiento de calderas BAXI y multimarca.
             </p>
 
             <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-xl p-6">
@@ -135,7 +135,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-blue-900 bg-white hover:bg-blue-50 transition-colors duration-300 shadow-lg"
             >
-              Solicitar Servicio Oficial
+              Solicitar Servicio Técnico
             </motion.button>
 
 
@@ -161,7 +161,7 @@ const Hero = () => {
             <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={banerHome}
-                alt="Servicio profesional de calderas BAXI"
+                alt="Técnico especializado en reparación de calderas BAXI"
                 className="absolute inset-0 w-full h-full object-cover object-[90%]"
                 width={1920}
                 height={500}
